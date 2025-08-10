@@ -1,0 +1,62 @@
+{
+	"layer": "top",	
+	"position": "top",
+    "height": 20,
+    "modules-left": ["hyprland/workspaces", "hyprland/mode", "hyprland/window"],
+    "modules-center": [],
+    "modules-right": ["memory", "pulseaudio", "battery", "network", "clock"],
+	"hyprland/workspaces": {
+        "disable-scroll": true,
+        "disable-markup": true,
+        "format": "{index}" 
+    },
+	"hyprland/window": {
+    	"format": "{}",
+    	"max-length": 150
+    },
+    "memory": {
+        "interval": 1,
+        "format": "[Mem: {percentage}%]"
+    },
+    "clock": {
+        "format": "[{:%m/%d/%Y | %I:%M:%S %p}]",
+        "interval": 1 
+    },
+    "battery": {
+        "bat": "BAT0",
+        "states": {
+              "full": 99,
+              "good": 80,
+              "normal": 50,
+              "warning": 20,
+              "critical": 10
+        },
+        "format": "[Bat: {capacity}%]",
+        "interval": 30
+    },
+    "network": {
+        "interface": "wlan0", 
+        "format-wifi": "[]",
+        "format-disconnected": "[No Internet]",
+        "interval": 60
+    },
+    "pulseaudio": {
+        "format": "[Vol: {volume}%]",
+        "format-bluetooth": "[ Vol: {volume}%]",
+        "format-muted":"[No Audio]",
+        "interval": 60
+    },
+    "hyprland/workspaces": {
+        "persistent-workspaces": {
+            "1": [], 
+            "2": [],
+            "3": [], 
+            "4": [], 
+            "5": [], 
+            "6": [], 
+            "7": [], 
+            "8": [], 
+            "9": []
+        }
+    }
+}

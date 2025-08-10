@@ -1,0 +1,85 @@
+* {
+  font-family: "Berkeley Mono", FontAwesome6Free;
+  font-size: 16px;
+}
+
+window#waybar {
+  background-color: #323232;
+  color: #ffffff;
+}
+
+.modules-left {
+  background-color: #323232;
+}
+
+.modules-right {
+  background-color: #323232;
+}
+
+#workspaces button {
+  border-radius: 0px;
+  font-weight: bold;
+  padding: 0px 5px;
+  color: #fff;
+}
+
+#workspaces button.empty {
+  color: #808080;
+}
+
+#workspaces button.active {
+  background-color: #285577;
+  color: #fff;
+}
+
+#mode {
+  background-color: #900000;
+  color: #ffffff;
+}
+
+#window {
+  color: #ffffff;
+  background-color: #285577;
+  padding: 0px 5px;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+  color: transparent;
+}
+
+window#waybar.empty {
+  background-color: #323232;
+}
+
+#network {
+  margin: 5px;
+}
+
+#memory {
+  margin: 5px;
+}
+
+#network.disconnected {
+  color: #ff5555;
+}
+
+#pulseaudio {
+  margin: 5px;
+}
+
+#pulseaudio.muted {
+  color: #ff5555;
+}
+
+#battery {
+  margin: 5px;
+}
+
+#clock {
+  margin: 5px;
+}
+
+#battery.critical {
+  color: #ff5555;
+}

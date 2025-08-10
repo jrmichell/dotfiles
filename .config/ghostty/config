@@ -1,0 +1,23 @@
+# Theme
+theme = tokyonight_night
+
+# Font 
+font-family = Berkeley Mono 
+font-size = 18
+
+# Background
+# background-opacity = 0.9
+
+# Cursor
+shell-integration-features = no-cursor
+cursor-style = block
+cursor-style-blink = false
+
+# Window
+title = "Ghostty"
+
+confirm-close-surface = false
+app-notifications = no-clipboard-copy
+
+# Keybinds
+keybind = ctrl+enter=unbind
