@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
 
-config.color_scheme = "tokyonight_storm"
+config.color_scheme = "tokyonight"
 
 config.font = wezterm.font("Berkeley Mono")
 config.font_size = 18
