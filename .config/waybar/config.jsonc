@@ -35,8 +35,8 @@
         "interval": 30
     },
     "network": {
-        "interface": "wlan0", 
-        "format-wifi": "[]",
+        "interface": "enp1s0", 
+        "format-ethernet": "[ ]",
         "format-disconnected": "[No Internet]",
         "interval": 60
     },
