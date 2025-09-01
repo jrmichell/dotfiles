@@ -11,6 +11,7 @@ return {
       },
       styles = {
         comments = {},
+        conditionals = {},
       },
     })
     vim.cmd("colorscheme catppuccin")
