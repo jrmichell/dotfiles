@@ -36,7 +36,7 @@
     },
     "network": {
         "interface": "wlan0", 
-        "format-wifi": "[]",
+        "format-wifi": "[ ]",
         "format-disconnected": "[No Internet]",
         "interval": 60
     },
