@@ -6,7 +6,7 @@ font-family = Berkeley Mono
 font-size = 16
 
 # Background
-# background-opacity = 0.9
+background-opacity = 0.9
 
 # Cursor
 shell-integration-features = no-cursor
