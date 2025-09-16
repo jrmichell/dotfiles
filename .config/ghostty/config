@@ -1,12 +1,12 @@
 # Theme
-theme = catppuccin
+theme = catppuccin 
 
 # Font 
 font-family = Berkeley Mono
 font-size = 14
 
 # Background
-background-opacity = 0.9
+# background-opacity = 0.9
 
 # Cursor
 shell-integration-features = no-cursor
