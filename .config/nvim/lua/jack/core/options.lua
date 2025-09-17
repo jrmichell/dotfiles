@@ -84,5 +84,3 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 
 vim.opt.guicursor = "a:block-blinkon0"
-
-vim.opt.mouse = ""
