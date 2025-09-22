@@ -6,7 +6,7 @@
 after-startup-command = []
 
 # Start AeroSpace at login
-start-at-login = false
+start-at-login = true 
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
 enable-normalization-flatten-containers = true
@@ -37,6 +37,9 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 # Also see: https://nikitabobko.github.io/AeroSpace/goodies#disable-hide-app
 automatically-unhide-macos-hidden-apps = false
 
+# Notify Sketchybar about workspace change and update icons
+exec-on-workspace-change = ['/bin/bash', '-c', 'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE && ~/.config/sketchybar/plugins/update_workspace_icons.sh']
+
 # Possible values: (qwerty|dvorak|colemak)
 # See https://nikitabobko.github.io/AeroSpace/guide#key-mapping
 [key-mapping]
@@ -51,12 +54,12 @@ automatically-unhide-macos-hidden-apps = false
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-    inner.horizontal = 0
-    inner.vertical =   0
-    outer.left =       0
-    outer.bottom =     0
-    outer.top =        0
-    outer.right =      0
+    inner.horizontal = 8
+    inner.vertical = 8
+    outer.bottom = 5
+    outer.top = 10
+    outer.right = 5
+    outer.left = 5
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -107,6 +110,13 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-k = 'move up'
     alt-shift-l = 'move right'
 
+    # App shortcuts
+    alt-b = 'exec-and-forget open -a /Applications/Brave\ Browser.app'
+    alt-t = 'exec-and-forget open -a /Applications/Ghostty.app'
+    alt-n = 'exec-and-forget open -a /Applications/Spotify.app'
+    alt-d = 'exec-and-forget open -a /Applications/Discord.app'
+    alt-shift-r = ['exec-and-forget /opt/homebrew/bin/sketchybar --reload']
+
     alt-shift-f = 'layout floating tiling' # Toggle between floating and tiling layout
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#resize
@@ -120,9 +130,9 @@ automatically-unhide-macos-hidden-apps = false
     alt-4 = 'workspace 4'
     alt-5 = 'workspace 5'
     alt-6 = 'workspace 6'
-    alt-7 = 'workspace 7'
-    alt-8 = 'workspace 8'
-    alt-9 = 'workspace 9'
+    # alt-7 = 'workspace 7'
+    # alt-8 = 'workspace 8'
+    # alt-9 = 'workspace 9'
     # alt-a = 'workspace A' # In your config, you can drop workspace bindings that you don't need
     # alt-b = 'workspace B'
     # alt-c = 'workspace C'
@@ -153,9 +163,9 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-4 = 'move-node-to-workspace 4'
     alt-shift-5 = 'move-node-to-workspace 5'
     alt-shift-6 = 'move-node-to-workspace 6'
-    alt-shift-7 = 'move-node-to-workspace 7'
-    alt-shift-8 = 'move-node-to-workspace 8'
-    alt-shift-9 = 'move-node-to-workspace 9'
+    # alt-shift-7 = 'move-node-to-workspace 7'
+    # alt-shift-8 = 'move-node-to-workspace 8'
+    # alt-shift-9 = 'move-node-to-workspace 9'
     # alt-shift-a = 'move-node-to-workspace A'
     # alt-shift-b = 'move-node-to-workspace B'
     # alt-shift-c = 'move-node-to-workspace C'
