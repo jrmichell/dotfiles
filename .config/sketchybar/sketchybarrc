@@ -56,7 +56,7 @@ for monitor in $(aerospace list-monitors --format "%{monitor-appkit-nsscreen-scr
       --set space.$sid display="$display_id" \
       --subscribe space.$sid aerospace_workspace_change \
       --set space.$sid \
-      drawing=on \
+      drawing=off \
       background.color=0x44ffffff \
       background.corner_radius=5 \
       background.drawing=on \

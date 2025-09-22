@@ -114,6 +114,7 @@ exec-on-workspace-change = ['/bin/bash', '-c', 'sketchybar --trigger aerospace_w
     alt-b = 'exec-and-forget open -a /Applications/Brave\ Browser.app'
     alt-t = 'exec-and-forget open -a /Applications/Ghostty.app'
     alt-n = 'exec-and-forget open -a /Applications/Spotify.app'
+    alt-c = 'exec-and-forget open -b com.microsoft.VSCode'
     alt-d = 'exec-and-forget open -a /Applications/Discord.app'
     alt-shift-r = ['exec-and-forget /opt/homebrew/bin/sketchybar --reload']
 
