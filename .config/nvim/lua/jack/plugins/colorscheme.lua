@@ -9,7 +9,7 @@ return {
           base = "#15151e",
         },
       },
-      -- transparent_background = true,
+      transparent_background = true,
       styles = {
         comments = {},
         conditionals = {},

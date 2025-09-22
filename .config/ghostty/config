@@ -6,7 +6,8 @@ font-family = CommitMono
 font-size = 18
 
 # Background
-# background-opacity = 0.95
+background-opacity = 0.8
+background-blur = true
 
 # Cursor
 shell-integration-features = no-cursor
