@@ -114,6 +114,7 @@ exec-on-workspace-change = ['/bin/bash', '-c', 'sketchybar --trigger aerospace_w
     alt-b = 'exec-and-forget open -a /Applications/Brave\ Browser.app'
     alt-t = 'exec-and-forget open -a /Applications/Ghostty.app'
     alt-n = 'exec-and-forget open -a /Applications/Spotify.app'
+    alt-i = 'exec-and-forget open -b com.jetbrains.intellij.ce'
     alt-c = 'exec-and-forget open -b com.microsoft.VSCode'
     alt-d = 'exec-and-forget open -a /Applications/Discord.app'
     alt-shift-r = ['exec-and-forget /opt/homebrew/bin/sketchybar --reload']
@@ -252,6 +253,18 @@ run= [
 
 [[on-window-detected]]
 if.app-id="com.microsoft.VSCode"
+run= [
+  'move-node-to-workspace 5'
+]
+
+[[on-window-detected]]
+if.app-id="epp.package.java"
+run= [
+  'move-node-to-workspace 5'
+]
+
+[[on-window-detected]]
+if.app-id="com.jetbrains.intellij.ce"
 run= [
   'move-node-to-workspace 5'
 ]
