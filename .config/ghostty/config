@@ -2,8 +2,8 @@
 theme = catppuccin 
 
 # Font 
-font-family = CommitMono
-font-size = 18
+font-family = Berkeley Mono
+font-size = 14
 
 # Background
 background-opacity = 0.8
@@ -15,7 +15,7 @@ cursor-style = block
 cursor-style-blink = false
 
 # Window
-title = " "
+title = "Ghostty"
 window-padding-x = 10
 window-padding-y = 10
 window-save-state = always
