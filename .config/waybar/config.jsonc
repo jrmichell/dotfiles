@@ -18,7 +18,7 @@
     "format": "{}",
     "max-length": 45,
     "rewrite": {
-      "": "Blank"
+      "": "Empty"
     },
     "separate-outputs": true
   },
@@ -28,9 +28,8 @@
     "sort-by-number": true
   },
   "clock": {
-    "format": "[{:%I:%M:%S %p}]",
+    "format": "[{:%m/%d/%Y | %I:%M:%S %p}]",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%Y-%m-%d}",
     "interval": 1
   },
   "battery": {
@@ -41,7 +40,7 @@
     "format": "[{capacity}% {icon} ]",
     "format-charging": "[ {capacity}%]",
     "format-plugged": "[  {capacity}%]",
-    "format-alt": "{time} {icon}",
+    "format-alt": "[{time} {icon} ]",
     "format-icons": [
       "",
       "",
@@ -61,7 +60,7 @@
     "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
-    "interval": 1,
+    "interval": 5,
     "on-click": "nm-connection-editor"
   },
   "pulseaudio": {
