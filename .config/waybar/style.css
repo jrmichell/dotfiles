@@ -93,7 +93,7 @@ button:hover {
 }
 
 #battery.critical {
-  color: #ff5555;
+  color: @red;
 }
 
 label:focus {
@@ -101,9 +101,9 @@ label:focus {
 }
 
 #pulseaudio.muted {
-  color: #ff5555;
+  color: @red;
 }
 
-#network.formated-disconnected {
-  color: #ff5555;
+#network.disconnected {
+  color: @red;
 }

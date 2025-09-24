@@ -54,7 +54,7 @@
     "format": "{ifname}",
     "format-wifi": "[ ]",
     "format-ethernet": " ",
-    "format-disconnected": "[Not Connected]",
+    "format-disconnected": "[No Internet]",
     "tooltip-format": "  {ifname} via {gwaddri}",
     "tooltip-format-wifi": "  {essid} ({signalStrength}%)",
     "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
