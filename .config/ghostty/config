@@ -3,7 +3,7 @@ theme = catppuccin
 
 # Font 
 font-family = Berkeley Mono
-font-size = 14
+font-size = 16
 
 # Background
 background-opacity = 0.8
