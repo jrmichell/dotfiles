@@ -37,10 +37,10 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "[{icon}  {capacity}%]",
+    "format": "[{icon} {capacity}%]",
     "format-charging": "[ {capacity}%]",
-    "format-plugged": "[  {capacity}%]",
-    "format-alt": "[{icon}  {time}]",
+    "format-plugged": "[ {capacity}%]",
+    "format-alt": "[{icon} {time}]",
     "format-icons": [
       "",
       "",
@@ -52,7 +52,7 @@
   },
   "network": {
     "format": "{ifname}",
-    "format-wifi": "[ ]",
+    "format-wifi": "[]",
     "format-ethernet": " ",
     "format-disconnected": "[No Internet]",
     "tooltip-format": "  {ifname} via {gwaddri}",
@@ -64,8 +64,8 @@
     "on-click": "nm-connection-editor"
   },
   "pulseaudio": {
-    "format": "[{icon}  {volume}%]",
-    "format-bluetooth": "[ {icon}  {volume}%]",
+    "format": "[{icon} {volume}%]",
+    "format-bluetooth": "[  {icon} {volume}%]",
     "format-muted": "[No Audio]",
     "format-icons": {
       "default": [
