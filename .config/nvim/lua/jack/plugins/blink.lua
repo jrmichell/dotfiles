@@ -51,14 +51,7 @@ return {
               end,
 
               highlight = function(ctx)
-                local hl = ctx.kind_hl
-                if vim.tbl_contains({ "Path" }, ctx.source_name) then
-                  local dev_icon, dev_hl = require("nvim-web-devicons").get_icon(ctx.label)
-                  if dev_icon then
-                    hl = dev_hl
-                  end
-                end
-
+                local highlight = "BlinkCmpKind" .. ctx.kind
                 if ctx.item.source_name == "LSP" then
                   local color_item =
                     require("nvim-highlight-colors").format(ctx.item.documentation, { kind = ctx.kind })
@@ -66,7 +59,7 @@ return {
                     highlight = color_item.abbr_hl_group
                   end
                 end
-                return hl
+                return highlight
               end,
             },
           },
