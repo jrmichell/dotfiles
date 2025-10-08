@@ -12,7 +12,7 @@ vim.opt.smartindent = true
 vim.opt.shiftwidth = 4
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "javascript", "typescript", "javascriptreact", "typescriptreact", "lua", "c", "cpp", "css" },
+  pattern = { "javascript", "typescript", "javascriptreact", "typescriptreact", "lua", "css" },
   callback = function()
     vim.opt.tabstop = 2
     vim.opt.softtabstop = 2
@@ -58,7 +58,7 @@ vim.opt.undofile = true
 vim.opt.termguicolors = true
 
 -- Place a column line
-vim.opt.colorcolumn = "80"
+-- vim.opt.colorcolumn = "80"
 
 -- Enable the sign column to prevent the screen from jumping
 vim.opt.signcolumn = "yes"

@@ -14,6 +14,13 @@ return {
         section_separators = { left = "", right = "" },
       },
       sections = {
+        lualine_a = {
+          {
+
+            "mode",
+            color = { gui = "bold" },
+          },
+        },
         lualine_b = {
           { "branch", icon = "" },
           "diff",
@@ -24,6 +31,12 @@ return {
         },
         lualine_x = {
           { "filetype" },
+        },
+        lualine_z = {
+          {
+            "location",
+            color = { gui = "bold" },
+          },
         },
       },
     })
