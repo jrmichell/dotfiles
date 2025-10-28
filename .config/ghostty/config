@@ -1,12 +1,12 @@
 # Theme
-theme = catppuccin 
+theme = Jellybeans 
 
 # Font 
-font-family = CommitMono
-font-size = 16
+font-family = JetBrainsMono NL 
+font-size = 14
 
 # Background
-# background-opacity = 0.77
+# background-opacity = 0.9
 
 # Cursor
 shell-integration-features = no-cursor
