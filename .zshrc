@@ -17,6 +17,9 @@ export QT_QPA_PLATFORMTHEME=gtk3
 export QT_QPA_PLATFORM=xcb
 export QT_SCREEN_SCALE_FACTORS="1;1"
 
+export GDK_BACKEND=x11
+export GDK_SCALE=2
+
 export PICO_SDK_PATH="$HOME/pico-sdk"
 
 alias s='source ~/dotfiles/.zshrc'
@@ -32,6 +35,8 @@ alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commi
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit -m'
+
+alias ae='source .venv/bin/activate'
 
 alias arduino-compile-uno='sudo arduino-cli compile --fqbn arduino:avr:uno'
 alias arduino-upload-uno='sudo arduino-cli upload -p /dev/ttyUSB0 --fqbn arduino:avr:uno --verbose'

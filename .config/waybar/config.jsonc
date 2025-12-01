@@ -1,37 +1,27 @@
 {
-  "margin-top": 5,
-  "margin-left": 10,
-  "margin-right": 10,
-  "modules-left": [
-    "hyprland/window"
-  ],
-  "modules-center": [
-    "hyprland/workspaces"
-  ],
-  "modules-right": [
-    "pulseaudio",
-    "network",
-    "battery",
-    "clock"
-  ],
-  "hyprland/window": {
-    "format": "{}",
-    "max-length": 45,
-    "rewrite": {
-      "": "Empty"
+	"layer": "top",	
+	"position": "top",
+    "height": 20,
+    "modules-left": ["hyprland/workspaces", "hyprland/mode", "hyprland/window"],
+    "modules-center": [],
+    "modules-right": ["memory", "pulseaudio", "battery", "network", "clock"],
+	"hyprland/workspaces": {
+        "disable-scroll": true,
+        "disable-markup": true,
+        "format": "{index}" 
     },
-    "separate-outputs": true
-  },
-  "hyprland/workspaces": {
-    "format": "{icon}",
-    "on-click": "activate",
-    "sort-by-number": true
-  },
-  "clock": {
-    "format": "[{:%m/%d/%Y | %I:%M:%S %p}]",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "interval": 1
-  },
+	"hyprland/window": {
+    	"format": "{}",
+    	"max-length": 150
+    },
+    "memory": {
+        "interval": 1,
+        "format": "[Mem: {percentage}%]"
+    },
+    "clock": {
+        "format": "[{:%m/%d/%Y | %I:%M:%S %p}]",
+        "interval": 1 
+    },
   "battery": {
     "states": {
       "warning": 30,
@@ -50,30 +40,29 @@
     ],
     "interval": 10
   },
-  "network": {
-    "format": "{ifname}",
-    "format-wifi": "[]",
-    "format-ethernet": " ",
-    "format-disconnected": "[No Internet]",
-    "tooltip-format": "  {ifname} via {gwaddri}",
-    "tooltip-format-wifi": "  {essid} ({signalStrength}%)",
-    "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
-    "tooltip-format-disconnected": "Disconnected",
-    "max-length": 50,
-    "interval": 5,
-    "on-click": "nm-connection-editor"
-  },
-  "pulseaudio": {
-    "format": "[{icon} {volume}%]",
-    "format-bluetooth": "[  {icon} {volume}%]",
-    "format-muted": "[No Audio]",
-    "format-icons": {
-      "default": [
-        "",
-        "",
-        ""
-      ]
+    "network": {
+        "interface": "wlan0", 
+        "format-wifi": "[]",
+        "format-disconnected": "[No Internet]",
+        "interval": 60
     },
-    "on-click": "pavucontrol"
-  }
+    "pulseaudio": {
+        "format": "[Vol: {volume}%]",
+        "format-bluetooth": "[ Vol: {volume}%]",
+        "format-muted":"[No Audio]",
+        "interval": 60
+    },
+    "hyprland/workspaces": {
+        "persistent-workspaces": {
+            "1": [], 
+            "2": [],
+            "3": [], 
+            "4": [], 
+            "5": [], 
+            "6": [], 
+            "7": [], 
+            "8": [], 
+            "9": []
+        }
+    }
 }

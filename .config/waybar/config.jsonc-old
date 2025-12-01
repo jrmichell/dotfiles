@@ -1,0 +1,79 @@
+{
+  "margin-top": 5,
+  "margin-left": 10,
+  "margin-right": 10,
+  "modules-left": [
+    "hyprland/window"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "battery",
+    "clock"
+  ],
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 45,
+    "rewrite": {
+      "": "Empty"
+    },
+    "separate-outputs": true
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "sort-by-number": true
+  },
+  "clock": {
+    "format": "[{:%m/%d/%Y | %I:%M:%S %p}]",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "interval": 1
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "[{icon} {capacity}%]",
+    "format-charging": "[ {capacity}%]",
+    "format-plugged": "[ {capacity}%]",
+    "format-alt": "[{icon} {time}]",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "interval": 10
+  },
+  "network": {
+    "format": "{ifname}",
+    "format-wifi": "[]",
+    "format-ethernet": " ",
+    "format-disconnected": "[No Internet]",
+    "tooltip-format": "  {ifname} via {gwaddri}",
+    "tooltip-format-wifi": "  {essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50,
+    "interval": 5,
+    "on-click": "nm-connection-editor"
+  },
+  "pulseaudio": {
+    "format": "[{icon} {volume}%]",
+    "format-bluetooth": "[  {icon} {volume}%]",
+    "format-muted": "[No Audio]",
+    "format-icons": {
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click": "pavucontrol"
+  }
+}

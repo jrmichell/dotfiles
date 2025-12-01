@@ -1,26 +1,43 @@
 return {
-  "wtfox/jellybeans.nvim",
-  lazy = false,
+  "ellisonleao/gruvbox.nvim",
   priority = 1000,
   config = function()
-    require("jellybeans").setup({
-      flat_ui = false,
+    require("gruvbox").setup({
+      bold = false,
+      inverse = false,
+      overrides = {
+        SignColumn = { bg = "#1d2021" },
+        BufferLineFill = { bg = "#1d2021" },
+        BufferLineBackground = { bg = "#1d2021", fg = "#a89984" },
+        BufferLineBufferSelected = { bg = "#1d2021", fg = "#ebdbb2", bold = true },
+        BufferLineBufferVisible = { bg = "#1d2021", fg = "#a89984" },
+      },
+      contrast = "hard",
     })
-    vim.cmd("colorscheme jellybeans")
+    vim.cmd("colorscheme gruvbox")
   end,
+
+  -- "wtfox/jellybeans.nvim",
+  -- lazy = false,
+  -- priority = 1000,
+  -- config = function()
+  --   require("jellybeans").setup({
+  --     flat_ui = false,
+  --   })
+  --   vim.cmd("colorscheme jellybeans")
+  -- end,
 
   -- "catppuccin/nvim",
   -- lazy = false,
   -- priority = 1000,
   -- config = function()
   --   require("catppuccin").setup({
-  --     flavour = "macchiato",
-  --     -- color_overrides = {
-  --     --   mocha = {
-  --     --     base = "#15151e",
-  --     --   },
-  --     -- },
-  --     no_italic = true,
+  --     flavour = "mocha",
+  --     color_overrides = {
+  --       mocha = {
+  --         base = "#15151e",
+  --       },
+  --     },
   --     styles = {
   --       comments = {},
   --       conditionals = {},

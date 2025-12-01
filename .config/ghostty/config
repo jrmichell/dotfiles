@@ -1,8 +1,9 @@
 # Theme
-theme = Jellybeans 
+theme = Gruvbox Dark Hard
 
 # Font 
-font-family = JetBrainsMono NL 
+font-family = CaskaydiaMono Nerd Font
+font-variation = wght=600
 font-size = 14
 
 # Background
