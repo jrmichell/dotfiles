@@ -3,9 +3,12 @@ return {
   cmd = "ZenMode",
   opts = {
     plugins = {
-      gitsigns = true,
-      tmux = true,
-      todo = true,
+      options = {
+        laststatus = 3,
+      },
+      gitsigns = false,
+      tmux = false,
+      todo = false,
     },
   },
   keys = { { "<leader>z", "<cmd>ZenMode<cr>", desc = "Zen Mode" } },
