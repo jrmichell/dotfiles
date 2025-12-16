@@ -1,0 +1,31 @@
+{
+  "disable_ai": true,
+  "minimap": {
+    "show": "never",
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Colored Zed Icons Theme Dark",
+  },
+  "ui_font_size": 18,
+  "buffer_font_family": "JetBrains Mono NL",
+  "buffer_font_size": 16,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha",
+  },
+  "theme_overrides": {
+    "Catppuccin Mocha": {
+      "editor.background": "#15151e",
+      "terminal.background": "#15151e",
+      "toolbar.background": "#15151e",
+      "editor.gutter.background": "#15151e",
+    },
+  },
+}

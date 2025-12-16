@@ -1,7 +1,7 @@
 return {
   -- "nvim-telescope/telescope.nvim",
   "telescope.nvim",
-  dir = vim.fn.expand("$HOME") .. "/Code/telescope.nvim/",
+  dir = vim.fn.expand("$HOME") .. "/Documents/code/telescope.nvim/",
   branch = "0.1.x",
   dependencies = {
     "nvim-lua/plenary.nvim",

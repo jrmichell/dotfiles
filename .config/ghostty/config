@@ -1,13 +1,13 @@
 # Theme
-theme = Gruvbox Dark Hard
+theme = catppuccin
 
 # Font 
-font-family = CaskaydiaMono Nerd Font
-font-variation = wght=600
+font-family = JetBrains Mono NL
+# font-variation = wght=600
 font-size = 14
 
 # Background
-# background-opacity = 0.9
+background-opacity = 0.9
 
 # Cursor
 shell-integration-features = no-cursor
