@@ -13,7 +13,7 @@ export PATH=~/.local/bin/:$PATH
 
 export PATH=~/.config/emacs/bin:$PATH
 
-export QT_QPA_PLATFORMTHEME=gtk3
+export QT_QPA_PLATFORMTHEME=qt6ct
 export QT_QPA_PLATFORM=xcb
 export QT_SCREEN_SCALE_FACTORS="1;1"
 
