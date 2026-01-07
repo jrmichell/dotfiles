@@ -11,7 +11,7 @@ local options = {
 	ro = false,
 	mouse = "a",
 	pumheight = 10,
-	showmode = false,
+	showmode = true,
 	showtabline = 2,
 	smartcase = true,
 	smartindent = true,
@@ -34,6 +34,7 @@ local options = {
 	wrap = false,
 	scrolloff = 4,
 	sidescrolloff = 4,
+  guicursor = "a:block-blinkon0"
 }
 
 for k, v in pairs(options) do
