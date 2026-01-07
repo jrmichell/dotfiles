@@ -28,38 +28,38 @@ return {
   --   vim.cmd("colorscheme jellybeans")
   -- end,
 
-  "catppuccin/nvim",
-  lazy = false,
-  priority = 1000,
-  config = function()
-    require("catppuccin").setup({
-      flavour = "mocha",
-      transparent_background = true,
-      color_overrides = {
-        mocha = {
-          base = "#15151e",
-        },
-      },
-      styles = {
-        comments = {},
-      },
-    })
-    vim.cmd("colorscheme catppuccin")
-  end,
-
-  -- "folke/tokyonight.nvim",
+  -- "catppuccin/nvim",
   -- lazy = false,
   -- priority = 1000,
   -- config = function()
-  --   require("tokyonight").setup({
-  --     style = "night",
-  --     transparent = true,
-  --     styles = {
-  --       comments = { italic = false },
-  --       keywords = { italic = false },
+  --   require("catppuccin").setup({
+  --     flavour = "mocha",
+  --     transparent_background = true,
+  --     color_overrides = {
+  --       mocha = {
+  --         base = "#15151e",
+  --       },
   --     },
-  --     lualine_bold = true,
+  --     styles = {
+  --       comments = {},
+  --     },
   --   })
-  --   vim.cmd("colorscheme tokyonight")
+  --   vim.cmd("colorscheme catppuccin")
   -- end,
+
+  "folke/tokyonight.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    require("tokyonight").setup({
+      style = "night",
+      -- transparent = true,
+      styles = {
+        comments = { italic = false },
+        keywords = { italic = false },
+      },
+      lualine_bold = true,
+    })
+    vim.cmd("colorscheme tokyonight")
+  end,
 }
