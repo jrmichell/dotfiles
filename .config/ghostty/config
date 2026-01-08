@@ -4,7 +4,7 @@ theme = TokyoNight
 # Font 
 font-family = CaskaydiaMono Nerd Font
 font-variation = wght=600
-font-size = 14
+font-size = 16
 
 # Background
 # background-opacity = 0.95
