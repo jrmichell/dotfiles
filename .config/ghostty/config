@@ -1,13 +1,14 @@
 # Theme
-theme = TokyoNight
+theme = Jellybeans 
 
 # Font 
-font-family = CaskaydiaMono Nerd Font
+font-family = JetBrains Mono
 font-variation = wght=600
 font-size = 16
 
 # Background
-# background-opacity = 0.95
+background-opacity = 0.80
+background-blur = true
 
 # Cursor
 shell-integration-features = no-cursor
